@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "381475476747",
+    "firebase_url": "https://drishtitest-a4277.firebaseio.com",
+    "project_id": "drishtitest-a4277",
+    "storage_bucket": "drishtitest-a4277.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381475476747:android:7f9ee4114cd43f91",
+        "android_client_info": {
+          "package_name": "com.example.newpc.drishti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381475476747-l4khb4319j9qq8or6tmqjisdkq7f3ssv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtiToNWOeZIS-PbsiXVqnavrnA-eS9uQs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

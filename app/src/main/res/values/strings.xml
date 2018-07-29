@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Drishti</string>
+    <string name="app_Generator">Generator</string>
+    <string name="app_Scanner">Scanner</string>
+    <string name="QR_Scanner">QRCode Scanner</string>
+    <string name="QR_Generator">QRCode Generator</string>
+    <string name="app_about">about</string>
+
+    <string name="enter_text">Enter Text to generate QR Code</string>
+    <string name="app_Team">Drishti is Inhouse App Developed by Credit Care Team for Asset Logging</string>
+</resources>
