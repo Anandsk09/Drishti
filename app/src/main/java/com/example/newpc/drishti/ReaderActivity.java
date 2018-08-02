@@ -8,12 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.newpc.qrcode.R;
+import com.example.newpc.drishti.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class ReaderActivity extends AppCompatActivity {
     private Button scan_btn;
+    private Button save_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,10 +27,11 @@ public class ReaderActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 IntentIntegrator integrator = new IntentIntegrator(activity);
-                integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
-                //integrator.setPrompt("Scan");
+                integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
+                integrator.setPrompt("Scan");
                 integrator.setCameraId(0);
-                integrator.setBeepEnabled(false);
+                integrator.setOrientationLocked(true);
+                integrator.setBeepEnabled(true);
                 integrator.setBarcodeImageEnabled(false);
                 integrator.initiateScan();
             }
@@ -42,7 +46,10 @@ public class ReaderActivity extends AppCompatActivity {
                 Toast.makeText(this, "You cancelled the scanning", Toast.LENGTH_LONG).show();
             }
             else {
-                Toast.makeText(this, result.getContents(),Toast.LENGTH_LONG).show();
+
+                Intent intent = new Intent(ReaderActivity.this,ResultActivity.class);
+                intent.putExtra("dataInfo",result.getContents().toString());
+                startActivity(intent);
             }
         }
         else {
@@ -50,5 +57,5 @@ public class ReaderActivity extends AppCompatActivity {
         }
     }
 
-    
+
 }

@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 27
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.example.newpc.qrcode"
+        applicationId "com.example.newpc.drishti"
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -21,10 +21,14 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    api 'com.android.support:appcompat-v7:24.0.0'
+    api 'com.android.support:appcompat-v7:27.0.2'
     api 'com.android.support.constraint:constraint-layout:1.1.2'
     testImplementation 'junit:junit:4.12'
     api 'com.google.zxing:core:3.2.1'
     api 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
-    api 'com.google.firebase:firebase-firestore:17.0.4'
+    api'com.journeyapps:zxing-android-embedded:3.5.0'
+    api 'com.google.firebase:firebase-core:16.0.0'
+    api 'com.google.firebase:firebase-database:16.0.1'
+
 }
+apply plugin: 'com.google.gms.google-services'

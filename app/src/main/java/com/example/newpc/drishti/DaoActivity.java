@@ -2,7 +2,7 @@ package com.example.newpc.drishti;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.example.newpc.qrcode.R;
+import com.example.newpc.drishti.R;
 
 public class DaoActivity extends AppCompatActivity {
 

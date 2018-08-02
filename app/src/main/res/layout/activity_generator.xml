@@ -7,22 +7,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#008080"
     tools:context="com.example.newpc.drishti.GeneratorActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="@string/QR_Generator"/>
    <EditText
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_marginTop="110dp"
+       android:layout_marginTop="60dp"
        android:hint="@string/enter_text"
        android:id="@+id/text"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="180dp"
         android:layout_centerHorizontal="true"
         android:text="GENERATE"
         android:id="@+id/gen_btn"/>
